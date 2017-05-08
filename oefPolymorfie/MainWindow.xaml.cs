@@ -23,6 +23,22 @@ namespace oefPolymorfie
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+        private void shapes_Click(object sender, RoutedEventArgs e)
+        {
+            Circle circle1 = new Circle(40, 40);
+            Square square1 = new Square(180, 180);
+            List<Shape> group = new List<Shape>();
+
+            group.Add(circle1);
+            group.Add(square1);
+
+            foreach (Shape shape in group)
+            {
+                shape.DisplayOn(canvas);
+            }
         }
     }
 }
