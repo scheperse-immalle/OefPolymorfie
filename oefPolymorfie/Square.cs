@@ -15,7 +15,9 @@ namespace oefPolymorfie
 
         public Square(int initX, int initY)
         {
-
+            x = initX;
+            y = initY;
+            CreateRectangle();
         }
 
         public override void DisplayOn(Canvas canvas)

@@ -15,6 +15,6 @@ namespace oefPolymorfie
         protected int size = 75;
         protected SolidColorBrush brush = new SolidColorBrush(Colors.Black);
 
-        public abstract void DisplayOn(Canvas canvas);
+        public abstract void DisplayOn(Canvas canvas); //is pas iets als deze worden ge-override
     }
 }
